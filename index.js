@@ -30,7 +30,12 @@ if (!hyperTerm.exists()) {
 	msg += chalk.red(`.\n`);
 	msg += chalk.green('Open https://hyperterm.org in the default browser? (y/n)');
 	console.error(msg);
-	process.exit(1);
+	if (yn('y')) {
+		return opn(`https://npmjs.com/package/${program.docs}`, {wait: false});
+	}
+	else {
+		process.exit(1);	
+	}
 }
 
 if (program.install) {
