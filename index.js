@@ -28,7 +28,7 @@ if (!hyperTerm.exists()) {
 	let msg = chalk.red('You don\'t have HyperTerm installed! :(\n');
 	msg += `${chalk.red('You are missing')} ${chalk.green('awesomeness')}`;
 	msg += chalk.red(`.\n`);
-	msg += chalk.green('Check it out: https://hyperterm.org/');
+	msg += chalk.green('Open https://hyperterm.org in the default browser? (y/n)');
 	console.error(msg);
 	process.exit(1);
 }
