@@ -8,7 +8,7 @@ const opn = require('opn');
 const ora = require('ora');
 const program = require('commander');
 const updateNotifier = require('update-notifier');
-
+const yn = require('yn');
 const hyperTerm = require('./hyperterm');
 const pkg = require('./package');
 
